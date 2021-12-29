@@ -11,3 +11,196 @@ ul, li{
     list-style-type: none;
 }
 // End Reset CSS
+
+// Root font
+:root{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+// End Root font
+
+
+// Couleurs
+$primary-color: rgb(158,206,251);
+$secondary-color: rgb(82,165,251);
+// End Couleurs
+
+// Mixins
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btnCta{
+    background-color: $secondary-color;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+// End Mixins
+
+// Style Général
+img{
+    width: 250px;
+    height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+}
+
+header,
+section{
+    background-color: $primary-color;
+}
+// End Style Général
+
+
+// Header
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    margin: 0 auto;
+    padding: 20px 0
+}
+
+.header-left{
+    @include flexCenter;
+    column-gap: 20px;
+
+    i{
+        font-size: 4rem;
+        color: white;
+    }
+
+    p{
+        @extend i;
+    }
+}
+
+.header-right{
+    @include flexCenter;
+    column-gap: 20px;
+
+    li{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    .cta{
+        @include btnCta;
+
+        &:last-child{
+            background-color: white;
+            color: $secondary-color;
+        }
+    }
+}
+// End Header
+
+// Hero
+.hero{
+    @include flexCenter;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 200px;
+
+    img{
+        flex-basis: 50%;
+        padding: 2px;
+    }
+}
+
+.services{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+    p{
+        font-size: 1.5rem;
+        color: $secondary-color;
+    }
+}
+
+.services-title{
+    line-height: 60px;
+
+    h1{
+        font-size: 5rem;
+        color: white;
+
+        &:last-child{
+            color: $secondary-color;
+        }
+    }
+}
+
+.get-started{
+    @include btnCta;
+    @include flexCenter;
+    column-gap: 15px;
+    width: fit-content;
+
+    p, i{
+        color: white;
+    }
+}
+// End Hero
+
+// Contact
+.contact{
+    z-index: 1000;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 1px 1px 20px 20px rgb(200 200 200 / 30%);
+    top: -150px
+}
+
+.couriers{
+    @include flexCenter;
+    flex-basis: 50%;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 100px 50px;
+
+    h2{
+        font-size: 3.5rem;
+        color: rgb(18,80,134);
+    }
+
+    p{
+        width: 250px;
+        font-size: 1.5rem;
+        text-align: center;
+        color: rgb(200,200,200);
+    }
+
+    a{
+        @include btnCta;
+        background-color: rgb(18,80,134);
+        width: fit-content;
+        color: white;
+    }
+}
+
+.businesses{
+    @extend .couriers;
+    border-left: 1px solid rgb(200,200,200);
+
+    a{
+        background-color: rgb(18,163,235);
+    }
+}
+// End Contact
+
+
+
