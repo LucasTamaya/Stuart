@@ -21,7 +21,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
 }
 
@@ -145,7 +145,7 @@ header {
 }
 .couriers h2, .businesses h2 {
   font-size: 3.5rem;
-  color: #125086;
+  color: #00249c;
 }
 .couriers p, .businesses p {
   width: 250px;
@@ -157,7 +157,7 @@ header {
   background-color: #52a5fb;
   padding: 10px 20px;
   border-radius: 25px;
-  background-color: #125086;
+  background-color: #00249c;
   width: fit-content;
   color: white;
 }
@@ -189,7 +189,7 @@ header {
   row-gap: 30px;
 }
 .delivery .delivery-text h2 {
-  color: #125086;
+  color: #00249c;
   font-size: 5rem;
   font-weight: bold;
   width: 450px;
@@ -205,6 +205,73 @@ header {
 }
 .delivery img {
   flex-basis: 50%;
+}
+
+.third-section {
+  background-color: #00249c;
+}
+
+.speed-and-simplicity {
+  margin: 0 auto;
+}
+.speed-and-simplicity .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+  width: 100%;
+}
+.speed-and-simplicity .banner h2 {
+  position: absolute;
+  text-align: center;
+  font-size: 3.5rem;
+  margin-left: auto;
+  color: #12a3eb;
+}
+.speed-and-simplicity .banner i, .speed-and-simplicity .banner .header-left p, .header-left .speed-and-simplicity .banner p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  transform: rotate(-10deg);
+  margin-left: auto;
+  justify-self: flex-end;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #12a3eb;
+}
+.speed-and-simplicity .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+}
+.speed-and-simplicity .grid .item {
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  padding: 50px;
+}
+.speed-and-simplicity .grid .item .circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #9ecefb;
+}
+.speed-and-simplicity .grid .item h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #12a3eb;
+}
+.speed-and-simplicity .grid .item p {
+  font-size: 1.5rem;
+  color: #b3a6af;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
