@@ -50,8 +50,7 @@ img{
     width: 100%;
 }
 
-header,
-section{
+header{
     background-color: $primary-color;
 }
 // End Style Général
@@ -102,6 +101,9 @@ section{
 // End Header
 
 // Hero
+.first-section{
+    background-color: $primary-color
+}
 .hero{
     @include flexCenter;
     width: 100%;
@@ -161,7 +163,7 @@ section{
     margin: 0 auto;
     border-radius: 25px;
     display: flex;
-    box-shadow: 1px 1px 20px 20px rgb(200 200 200 / 30%);
+    box-shadow: 1px 1px 20px 20px rgba(55, 153, 218, 0.24);
     top: -150px
 }
 
@@ -181,7 +183,7 @@ section{
         width: 250px;
         font-size: 1.5rem;
         text-align: center;
-        color: rgb(200,200,200);
+        color: rgb(179,166,175);
     }
 
     a{
@@ -194,13 +196,56 @@ section{
 
 .businesses{
     @extend .couriers;
-    border-left: 1px solid rgb(200,200,200);
+    border-left: 1px solid rgb(179,166,175);
 
     a{
         background-color: rgb(18,163,235);
     }
 }
 // End Contact
+
+// Second section
+.second-section{
+    background-color: white;
+}
+
+.delivery{
+    @include flexCenter;
+    width: 100%;
+    margin: 0 auto;
+
+    .delivery-text{
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+
+        h2{
+            color: rgb(18,80,134);
+            font-size: 5rem;
+            font-weight: bold;
+            width: 450px;
+        }
+
+        p{
+            color: rgb(179,166,175);
+            font-size: 1.5rem;
+            text-align: left;
+            width: 450px;
+
+            span{
+                color: grey;
+            }
+        }
+    }
+
+    img{
+        flex-basis: 50%;
+    }
+}
+// End Second section
 
 
 

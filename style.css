@@ -25,8 +25,7 @@ img {
   width: 100%;
 }
 
-header,
-section {
+header {
   background-color: #9ecefb;
 }
 
@@ -67,6 +66,10 @@ section {
 .header-right .cta:last-child {
   background-color: white;
   color: #52a5fb;
+}
+
+.first-section {
+  background-color: #9ecefb;
 }
 
 .hero {
@@ -127,7 +130,7 @@ section {
   margin: 0 auto;
   border-radius: 25px;
   display: flex;
-  box-shadow: 1px 1px 20px 20px rgba(200, 200, 200, 0.3);
+  box-shadow: 1px 1px 20px 20px rgba(55, 153, 218, 0.24);
   top: -150px;
 }
 
@@ -148,7 +151,7 @@ section {
   width: 250px;
   font-size: 1.5rem;
   text-align: center;
-  color: #c8c8c8;
+  color: #b3a6af;
 }
 .couriers a, .businesses a {
   background-color: #52a5fb;
@@ -160,10 +163,48 @@ section {
 }
 
 .businesses {
-  border-left: 1px solid #c8c8c8;
+  border-left: 1px solid #b3a6af;
 }
 .businesses a {
   background-color: #12a3eb;
+}
+
+.second-section {
+  background-color: white;
+}
+
+.delivery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.delivery .delivery-text {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.delivery .delivery-text h2 {
+  color: #125086;
+  font-size: 5rem;
+  font-weight: bold;
+  width: 450px;
+}
+.delivery .delivery-text p {
+  color: #b3a6af;
+  font-size: 1.5rem;
+  text-align: left;
+  width: 450px;
+}
+.delivery .delivery-text p span {
+  color: grey;
+}
+.delivery img {
+  flex-basis: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
