@@ -15,6 +15,10 @@ ul, li {
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  height: 110000vh;
+}
+
 img {
   width: 250px;
   height: 100%;
@@ -209,6 +213,7 @@ header {
 
 .third-section {
   background-color: #00249c;
+  padding-bottom: 100px;
 }
 
 .speed-and-simplicity {
@@ -272,6 +277,112 @@ header {
   font-size: 1.5rem;
   color: #b3a6af;
   text-align: center;
+}
+
+.partner {
+  margin: 0 auto;
+}
+.partner h2:first-child {
+  color: #b3a6af;
+  font-size: 3.5rem;
+  text-align: center;
+  padding: 100px 0;
+}
+.partner .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  column-gap: 30px;
+}
+.partner .grid .item {
+  height: 450px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  row-gap: 60px;
+  padding: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px 20px rgba(48, 53, 56, 0.24);
+}
+.partner .grid .item:hover .item-after {
+  height: 80%;
+  bottom: 0;
+}
+.partner .grid .item h2 {
+  color: white;
+  position: absolute;
+  align-self: flex-start;
+  font-size: 2.5rem;
+}
+.partner .grid .item i, .partner .grid .item .header-left p, .header-left .partner .grid .item p {
+  font-size: 8rem;
+}
+.partner .grid .one {
+  background-color: #ff4d73;
+}
+.partner .grid .two {
+  background-color: #0192ff;
+}
+.partner .grid .three {
+  background-color: #00249c;
+}
+.partner .grid .four {
+  background-color: #ffcc36;
+}
+
+.item-after {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  background-color: white;
+  border-radius: 0 0 25px 25px;
+  padding: 0 30px;
+  overflow: hidden;
+}
+.item-after p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.item-after p:nth-child(2) {
+  color: #b3a6af;
+}
+.item-after a {
+  color: #c8c8c8;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+.item-after .solutions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#partner-restaurants {
+  color: #ff4d73;
+}
+
+#partner-groceries {
+  color: #52a5fb;
+}
+
+#partner-retail {
+  color: #00249c;
+}
+
+#partner-e-commerce {
+  color: #ffcc36;
 }
 
 /*# sourceMappingURL=style.css.map */
